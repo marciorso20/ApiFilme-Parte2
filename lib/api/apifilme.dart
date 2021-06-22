@@ -10,7 +10,7 @@ class API {
   Future<Filme> fetchFilme() async {
     final response = await http.get(
       Uri.https(
-          _autorizacao, _path, {'api_key': 'a5bc05fb630c9b7fdc560033345fa13e'}),
+          _autorizacao, _path, {'api_key': ''}),
     );
 
     if (response.statusCode == 200) {
